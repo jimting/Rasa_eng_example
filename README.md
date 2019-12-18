@@ -35,7 +35,7 @@ Please install docker-compose on ur server first.
   - action_restart
 ```
   For short : A story named story_happy -> if (greet) utter_greet,and if (mood_happy) utter_happy and action_restart.
-  * domain.yml範例：()
+  * domain.yml Example:
 ```
 intents:
   - greet
