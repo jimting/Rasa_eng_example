@@ -1,0 +1,17 @@
+language: en
+
+pipeline:
+- name: "nlp_spacy"
+- name: "tokenizer_spacy"
+- name: "intent_entity_featurizer_regex"
+- name: "intent_featurizer_spacy"
+- name: "ner_crf"
+- name: "intent_classifier_sklearn"
+
+policies:
+  - epochs: 50
+    max_history: 6
+    name: KerasPolicy
+  - core_threshold: 0.3
+    name: FallbackPolicy
+    nlu_threshold: 0.8

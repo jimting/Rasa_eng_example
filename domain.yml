@@ -1,0 +1,23 @@
+intents:
+  - greet
+  - mood_happy
+  - mood_unhappy
+  - ask_weather
+entities:
+  - city
+
+actions:
+  - utter_greet
+  - utter_happy
+  - utter_unhappy
+  - action_ask_weather
+
+templates:
+  utter_greet:
+  - text: "Hello! How are you?"
+  utter_happy:
+  - text: "Wow! That's great!"
+  utter_unhappy:
+  - text: "I feel sorry to hear that."
+  utter_default:
+  - text: "idk what you are talking about."
